@@ -1,15 +1,5 @@
-![PiZilla](/.github/assets/PiZilla-text.png)
 
-***
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ace237dc86644d0abee76f7b8511c365)](https://www.codacy.com/app/nkprince007/PiZilla?utm_source=github.com&utm_medium=referral&utm_content=NIT-dgp/PiZilla&utm_campaign=badger)
-[![Build Status](https://travis-ci.org/NITDgpOS/PiZilla.svg?branch=master)](https://travis-ci.org/NITDgpOS/PiZilla)
-[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/nitdgpos/pizilla/)
-[![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/NIT-dgp/General?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-***
-
-# How we code it 💻
+# Introduction
 
 **PiZilla** is built entirely using **[Express][express]** and
 **[ReactJS][react]**. Transpiled using **[Babel][babel]** with
@@ -29,15 +19,6 @@ and [transform-object-rest-spread][tors] operators.
 - Build the react application with `npm run build` or `yarn build`.
 - Configure your backend server accordingly at [server/config.js](/server/config.js).
 
-```javascript
-const config = {
-    deadline: 24, // hours beyond which a file is deleted
-    deleteSchedule: '00 00 */2 * * *', // runs the check once every two hours
-    port: 80, // configure your server port number
-    root: path.dirname(__dirname), // the root directory of application
-    uploads: 'uploads' // the location where uploads are to be saved
-};
-```
 
 - Start the **Express** server with `npm start` or `yarn start`.
 
@@ -45,21 +26,6 @@ const config = {
 
 ***
 
-# Screenshots
-
-![Screenshot1](/.github/assets/PiZilla-screenshot1.png)
-![Screenshot2](/.github/assets/PiZilla-screenshot2.png)
-![Screenshot3](/.github/assets/PiZilla-screenshot3.png)
-
-# Throughput Graph
-
-[![Throughput Graph](https://graphs.waffle.io/NIT-dgp/PiZilla/throughput.svg)](https://waffle.io/NIT-dgp/PiZilla/metrics/throughput)
-
-# 🌍 Important Links
-
-- [Contribution Guidelines](/.github/CONTRIBUTING.md)
-- [Code of Conduct](/.github/CODE_OF_CONDUCT.md)
-- [eslint configuration](/.eslintrc)
 
 [nitdgpos]: https://github.com/NIT-dgp
 [express]: https://expressjs.com
